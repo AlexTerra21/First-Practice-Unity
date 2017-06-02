@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour {
 	// Use this for initialization
 	void OnCollisionEnter (Collision collision) 
 	{
-		Debug.Log ("OnCollisionEnter");
+		//Debug.Log ("OnCollisionEnter");
 		Target target = collision.gameObject.GetComponent<Target> ();
 		if (target != null) target.Hit (ammoStrength);
 		Destroy (gameObject);
